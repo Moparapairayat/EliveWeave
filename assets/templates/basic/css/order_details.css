@@ -1,0 +1,124 @@
+.order-details-top {
+	margin-bottom: 12px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.order-details-product {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.details-info-list {
+	padding-block: 16px;
+	border: 1px solid hsl(var(--border) / 0.5);
+	border-radius: 6px;
+}
+
+.details-info-list:not(:last-child) {
+	margin-bottom: 16px;
+}
+
+.details-info-list li {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	flex-wrap: wrap;
+	padding-inline: 16px;
+}
+
+.details-info-list h6 {
+	padding-inline: 16px;
+}
+
+.details-info-list li span:first-child {
+	font-weight: 500;
+	color: hsl(var(--black) / 0.6);
+}
+
+.details-info-list li span:last-child {
+	font-weight: 500;
+}
+
+.details-info-list li:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.details-info-list li.total {
+	border-top: 1px solid hsl(var(--border) / 0.5);
+	padding-top: 12px;
+	font-size: 1rem;
+}
+
+.details-info-address {
+	border: 1px solid hsl(var(--border) / 0.5);
+	border-radius: 6px;
+	padding: 16px;
+}
+
+.info-address-list li {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	gap: 24px;
+}
+
+.info-address-list li:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.info-address-list li .title {
+	min-width: 81px;
+	font-weight: 500;
+	color: hsl(var(--black) / 0.6);
+	flex-shrink: 0;
+}
+
+.info-address-list .devide-colon {
+	margin-right: 24px;
+}
+
+.info-address-list li .title~span {
+	display: flex;
+	align-items: flex-start;
+}
+
+.order-details-id {
+	gap: 0 6px;
+}
+
+@media (max-width: 767px) {
+	.info-address-list li {
+		gap: 12px;
+	}
+
+	.info-address-list .devide-colon {
+		margin-right: 12px;
+	}
+
+	.order-details-products .single-product-item {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+
+	.order-details-products .content-top {
+		margin-bottom: 0;
+	}
+
+	.order-details-top {
+		flex-direction: column-reverse;
+		align-items: flex-start;
+	}
+}
+
+@media (max-width: 1399px) {
+
+	.details-info-list,
+	.details-info-address {
+		max-width: 100%;
+	}
+}

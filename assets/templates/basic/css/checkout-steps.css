@@ -1,0 +1,148 @@
+.cart-link {
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.cart-link:hover {
+	background-color: hsl(var(--base) / 0.01);
+}
+
+.address-wrapper {
+	padding: 30px;
+	border: 1px solid hsl(var(--border));
+	border-radius: 5px;
+}
+
+@media (max-width: 991px) {
+	.address-wrapper {
+		padding: 20px;
+	}
+}
+
+.address-item-left {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 12px;
+}
+
+.address-item-inner {
+	display: flex;
+	align-items: center;
+}
+
+.address-item-inner:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.address-item-label {
+	display: block;
+	min-width: 100px;
+	color: hsl(var(--black) / 0.6);
+	font-weight: 500;
+}
+
+@media (max-width: 575px) {
+	.address-item-label {
+		font-size: 0.8rem;
+		min-width: 90px;
+	}
+
+	.address-item-value {
+		font-size: 0.8rem;
+	}
+}
+
+.address-item-left .form-check-input {
+	height: 16px !important;
+	width: 16px !important;
+	display: flex;
+}
+
+.address-item-left .form--check .form-check-input:checked::before {
+	font-size: 12px !important;
+}
+
+.item-devide {
+	margin-right: 32px;
+}
+
+@media (max-width: 575px) {
+	.item-devide {
+		display: none;
+	}
+}
+
+.address-single {
+	display: flex;
+	align-items: flex-start;
+	position: relative;
+}
+
+.address-single:not(last-of-type) {
+	margin-bottom: 16px;
+	padding-bottom: 16px;
+	border-bottom: 1px solid hsl(var(--border) / 0.5);
+}
+
+.address-single-add-new {
+	background: hsl(var(--black) / 0.02);
+	border-radius: 5px;
+	padding: 20px;
+	cursor: pointer;
+}
+
+.address-single-add-new i {
+	font-size: 25px;
+	margin-bottom: 10px;
+}
+
+.address-item .form-check-input {
+	position: relative;
+	z-index: 3;
+	cursor: pointer;
+}
+
+.address-type-content .address-item-label {
+	min-width: 150px;
+}
+
+.delivery-type-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	gap: 16px;
+	flex-wrap: wrap;
+}
+
+.delivery-type {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding: 12px 16px;
+	border: 1px solid hsl(var(--border));
+	border-radius: 6px;
+	user-select: none;
+}
+
+.delivery-type .form-check-input,
+.payment-option-item .form-check-input {
+	height: 16px !important;
+	width: 16px !important;
+}
+
+.delivery-type .form-check-input::before,
+.payment-option-item .form-check-input::before {
+	font-size: 0.75rem !important;
+}
+
+.delivery-type:has(input:checked) {
+	border-color: hsl(var(--black) / 0.2);
+}
+
+.delivery-type-content {
+	width: 100%;
+}

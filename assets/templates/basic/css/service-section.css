@@ -1,0 +1,118 @@
+.service-section {
+	background: hsl(var(--black) / 0.03);
+}
+
+.services-wrapper {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1rem;
+	justify-items: stretch;
+	justify-content: stretch;
+}
+
+@media (max-width: 1199px) {
+	.services-wrapper {
+		grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	}
+}
+
+@media (max-width: 991px) {
+	.services-wrapper {
+		grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+	}
+}
+
+@media (max-width: 767px) {
+	.services-wrapper {
+		grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+	}
+}
+
+@media (max-width: 575px) {
+	.services-wrapper {
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+	}
+}
+
+@media (max-width: 400px) {
+	.services-wrapper {
+		grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+	}
+
+	.services-wrapper {
+		gap: 1rem;
+	}
+}
+
+.services-card {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	justify-content: center;
+	border: 1px solid hsl(var(--border));
+	background-color: #fff;
+	padding: 1.5rem;
+	border-radius: 5px;
+}
+
+.services-card__icon svg {
+	width: 60px;
+	fill: hsl(var(--white));
+}
+
+.services-card__text {
+	display: block;
+	line-height: 1.2;
+	font-weight: 500;
+	color: hsl(var(--heading-color) / 0.8);
+}
+
+@media (max-width: 1399px) {
+	.services-card__text {
+		font-size: 1rem;
+	}
+
+	.services-card {
+		flex-direction: column;
+		gap: 1.5rem !important;
+		text-align: center;
+	}
+}
+
+.services-card__content .sub-title {
+	font-size: 0.875rem;
+	color: hsl(var(--heading-color) / 0.7);
+}
+
+@media (max-width: 991px) {
+	.services-card__icon img {
+		width: 48px !important;
+		height: 40px !important;
+	}
+}
+
+@media (max-width: 575px) {
+	.services-card {
+		padding: 1rem !important;
+		gap: 1rem;
+	}
+
+	.services-card__icon img {
+		width: 36px !important;
+		height: 30px !important;
+	}
+
+	.services-card__text {
+		font-size: 0.875rem !important;
+	}
+
+	.services-card__content .sub-title {
+		font-size: 0.75rem !important;
+	}
+}
+
+@media (max-width: 400px) {
+	.services-card {
+		padding: 0.5rem !important;
+	}
+}
