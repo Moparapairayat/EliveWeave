@@ -145,6 +145,17 @@ A **production-ready e-commerce platform** designed for entrepreneurs, businesse
 - 🔧 Customizable theme
 - ♿ Fully accessible
 
+#### 📱 **SMS & Communication**
+- 📲 Multiple SMS gateways (Nexmo, Twilio, Infobip, etc.)
+- 📧 Email notifications with SMTP
+- 💬 Customer messaging system
+- 🔔 Real-time alerts
+- 🌍 Global SMS coverage
+
+<div align="center">
+  <img src="assets/images/sms-gateways.png" alt="SMS Gateways Integration" width="600">
+</div>
+
 </details>
 
 ---
